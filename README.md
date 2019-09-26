@@ -1,0 +1,6 @@
+- `composer install`
+- `cp .env.example .env`
+- `vendor/bin/homestead make`
+- `vagrant up`
+- `vagrant ssh`
+- `cd code && php artisan migrate`
