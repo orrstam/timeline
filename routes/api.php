@@ -21,7 +21,6 @@ Route::prefix('auth')->namespace('Auth')->group(function ($router) {
 });
 
 Route::middleware('auth:api')->group(function () {
-    Route::get('foo', function () {
-        return response()->json(['data' => 'All fun and games!']);
-    });
+    Route::post('admin', 'AdminController@store');
+    Route::get('admin', 'AdminController@index');
 });
