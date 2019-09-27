@@ -3,4 +3,6 @@
 - `vendor/bin/homestead make`
 - `vagrant up`
 - `vagrant ssh`
-- `cd code && php artisan migrate`
+- `cd code`
+- `php artisan storage:link`
+- `php artisan migrate`
