@@ -21,6 +21,6 @@ Route::prefix('auth')->namespace('Auth')->group(function ($router) {
 });
 
 Route::middleware('auth:api')->group(function () {
-    Route::post('admin', 'AdminController@store');
-    Route::get('admin', 'AdminController@index');
+    Route::post('admin', 'PostsController@store')->middleware('permission: create posts');
+    Route::get('admin', 'PostsController@index')->middleware('permission:show posts');
 });

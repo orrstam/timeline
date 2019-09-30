@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Resources\FileResource;
 
-class AdminController extends Controller
+class PostsController extends Controller
 {
     /**
      * Get all files.

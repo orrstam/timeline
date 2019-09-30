@@ -62,6 +62,8 @@ class AuthController extends Controller
             'password' => bcrypt($data['password'])
         ]);
 
+        $user->assignRole('subscriber');
+
         $token = auth()->login($user);
 
         return $this->respondWithToken($token);
