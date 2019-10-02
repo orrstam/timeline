@@ -5,6 +5,8 @@
 1. `vagrant ssh`
 1. `cd code`
 1. `php artisan storage:link`
+1. `php artisan key:generate`
+1. `php artisan jwt:secret`
 1. `php artisan migrate`
 1. `exit`
 1. `yarn`
