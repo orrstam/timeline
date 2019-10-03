@@ -10,13 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            <div class="content">
-                <div class="title m-b-md">
-                    Timeline
-                </div>
-            </div>
-        </div>
+        <div id="root"></div>
         <script src="{{ mix('/js/index.js') }}"></script>
     </body>
 </html>
