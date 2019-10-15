@@ -10,7 +10,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "storybook": "start-storybook -p 9009 -s ./.storybook/assets",
     "build-storybook": "build-storybook -s ./.storybook/assets",
-    "lint": "tsc --noEmit && eslint './resources/ts/**/*.{ts,tsx}' --quiet --fix"
+    "lint": "tsc --noEmit && eslint ./resources/ts/**/*.{ts,tsx}"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
@@ -25,6 +25,7 @@
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^2.1.2",
     "laravel-mix": "^4.0.7",
     "lodash": "^4.17.13",
     "prettier": "^1.18.2",
